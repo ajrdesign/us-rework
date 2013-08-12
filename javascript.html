@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bluebeam Framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="/us-rework/css/bootstrap.css" rel="stylesheet">
+  <link href="/us-rework/css/app.css" rel="stylesheet">
+  <link href="/us-rework/css/responsive.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="shortcut icon" href="ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              MENU
+            </a>
+            <a class="brand" href="/../">Bluebeam</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Grids</a></li>
+                <li><a href="elements.html">CSS Elements</a></li>
+                <li class="active"><a href="javascript.html">Javascript</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+<!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="hero-unit hero-unit-gradient">
+          <h1>Javascript</h1>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+              <ul data-spy="affix" data-offset-top="235" class="nav nav-tabs nav-stacked docs-sidebar" id="navbar">
+                <li><a href="#modal">Modal</i></a></li>
+                <li><a href="#tabs">Tabs</i></a></li>
+                <li><a href="#collapse">Collapse</i></a></li>
+                <li><a href="#carousel">Carousel</i></a></li>
+                <li><a href="#affix">Affix</i></a></li>
+                <li><a href="#more">More</i></a></li>
+              </ul>
+              <p></p>
+           </div>
+          <div class="span9">
+            <p>The beauty of this framework is that most of these javascript plugins need very little javascript manipulation. Some just need a small tag of activation in the footer while others are completely in tact as long as you use the correct classes.</p>
+            <p>Most of these functions are controlled by 'data' tags being added to hyperlinks.</p>
+            <div class="page-header" id="modal">
+              <h1>Modal</h1>
+            </div>
+            <p>A modal is a simple drop down DIV that makes the fades the rest of the website away.</p>
+            <div class="well well-clear center">
+              <!-- Button to trigger modal -->
+              <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch modal</a>
+              <a href="#myModalsmall" role="button" class="btn" data-toggle="modal">Launch small modal</a>
+              <a href="#myModallarge" role="button" class="btn" data-toggle="modal">Launch large modal</a>
+            </div>  
+              <!-- Modal -->
+              <div class="modal hide fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Modal header</h3>
+                </div>
+                <div class="modal-body">
+                  <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+              </div>
+
+              <!-- Small Modal -->
+              <div class="modal modal-small hide fade in" id="myModalsmall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Modal header</h3>
+                </div>
+                <div class="modal-body">
+                  <p>This is the code you use to make this modal small:</p>
+                  <code>&lt;div class="modal <strong>modal-small</strong>"&gt;</code>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+              </div>
+
+              <!-- Large Modal -->
+              <div class="modal modal-large hide fade in" id="myModallarge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Modal header</h3>
+                </div>
+                <div class="modal-body">
+                  <p>This is the code you use to make this modal large:</p>
+                  <code>&lt;div class="modal <strong>modal-large</strong>"&gt;</code>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                </div>
+              </div>
+<pre>
+                              &lt;-- Button to trigger modal --&gt;
+
+&lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;Launch demo modal&lt;/a&gt;
+ 
+                                        &lt;-- Modal --&gt;
+
+&lt;div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+  &lt;div class="modal-header"&gt;
+    &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;×&lt;/button&gt;
+    &lt;h3 id="myModalLabel"&gt;Modal header&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-body"&gt;
+    &lt;p&gt;One fine body…&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;button class="btn" data-dismiss="modal" aria-hidden="true"&gt;Close&lt;/button&gt;
+    &lt;button class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <div class="page-header" id="tabs">
+            <h1>Tabs</h1>
+          </div>
+          <h3>Tab navigation</h3>
+          <p>Tab navigation allows us to hide certain content until the user has a further curiousity. This keeps pages nice and clean with only the most relevant content being displayed first.</p>
+          <div class="well well-clear">
+            <!-- Tabs Navigation
+            You must include the data-toggle="tab" in the <a> elements of the tab navigation to make it work. -->
+            <ul class="nav nav-tabs" id="myTab">
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li><a href="#messages" data-toggle="tab">Messages</a></li>
+            </ul>
+
+            <!-- End Tabs Navigation -->
+             
+
+             <!-- Tabs Content -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="home">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+              <div class="tab-pane" id="profile">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+              <div class="tab-pane" id="messages">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+            </div>
+            <!-- End Tabs Content -->
+          </div>
+<pre>
+&lt;!-- Tabs Navigation
+You must include the data-toggle="tab" in the &lt;a&gt; elements of the tab navigation to make it work. --&gt;
+&lt;ul class="nav nav-tabs" id="myTab"&gt;
+  &lt;li&gt;&lt;a href="#" data-toggle="tab"&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- End Tabs Navigation --&gt;
+
+ &lt;!-- Tabs Content --&gt;
+&lt;div class="tab-content"&gt;
+  &lt;div class="tab-pane" id="#"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- End Tabs Content --&gt;
+</pre>
+
+          <h3>Pill navigation</h3>
+          <div class="well well-clear">
+            <!-- Tabs Navigation
+            You must include the data-toggle="tab" in the <a> elements of the tab navigation to make it work. -->
+            <ul class="nav nav-pills" id="myPill">
+              <li class="active"><a href="#pill1" data-toggle="tab">Home</a></li>
+              <li><a href="#pill2" data-toggle="tab">Profile</a></li>
+              <li><a href="#pill3" data-toggle="tab">Messages</a></li>
+            </ul>
+
+            <!-- End Tabs Navigation -->
+             
+
+            <!-- Tabs Content -->
+            <div class="tab-content">
+              <div class="tab-pane active" id="pill1">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+              <div class="tab-pane" id="pill2">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+              <div class="tab-pane" id="pill3">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+            </div>
+            <!-- End Tabs Content -->
+          </div>
+<pre>
+&lt;ul class="nav <strong>nav-pills</strong>" id="myTab"&gt;
+</pre>
+
+          <h3>Tabs below navigation</h3>
+          <div class="well well-clear">
+            <div class="tabbable tabs-below">
+              <!-- Tabs Content -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="tabbable1">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+                <div class="tab-pane" id="tabbable2">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+                <div class="tab-pane" id="tabbable3">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+              </div>
+              <!-- Tabs Navigation
+            You must include the data-toggle="tab" in the <a> elements of the tab navigation to make it work. -->
+              <ul class="nav nav-tabs" id="myTabbable">
+                <li class="active"><a href="#tabbable1" data-toggle="tab">Home</a></li>
+                <li><a href="#tabbable2" data-toggle="tab">Profile</a></li>
+                <li><a href="#tabbable3" data-toggle="tab">Messages</a></li>
+              </ul>
+              <!-- End Tabs Navigation -->
+            </div>
+            <!-- End Tabs Content -->
+          </div>
+<pre>
+  &lt;div class="tabbable tabs-below"&gt;
+    &lt;ul class="nav nav-tabs" id="myTab"&gt;
+</pre>
+
+          <h3>Tabs below navigation</h3>
+          <div class="well well-clear">
+            <div class="tabbable tabs-left">
+              <!-- Tabs Navigation
+            You must include the data-toggle="tab" in the <a> elements of the tab navigation to make it work. -->
+              <ul class="nav nav-tabs" id="mytabbable-left">
+                <li class="active"><a href="#tabbable-left1" data-toggle="tab">Home</a></li>
+                <li><a href="#tabbable-left2" data-toggle="tab">Profile</a></li>
+                <li><a href="#tabbable-left3" data-toggle="tab">Messages</a></li>
+              </ul>
+              <!-- End Tabs Navigation -->
+
+              <!-- Tabs Content -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="tabbable-left1">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+                <div class="tab-pane" id="tabbable-left2">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+                <div class="tab-pane" id="tabbable-left3">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+              </div>
+            </div>
+            <!-- End Tabs Content -->
+          </div>
+<pre>
+  &lt;div class="tabbable tabs-left"&gt;
+    &lt;ul class="nav nav-tabs" id="myTab"&gt;
+</pre>
+          <div class="page-header" id="tooltips">
+            <h1>Tooltips</h1>
+          </div>
+          Tooltips can be used to explain a concept further with the action of <a href="javascript(0)" class="tooltip" data-tooltip="Placing your mouse over.">rolling over</a> the link element. There are three sizes to display various sizes of information.
+          <div class="well well-clear">
+
+            <a href="#" class="tooltip" data-tooltip="Hi! I'm a tooltip! Blah blah blah blah!">Normal Tooltip</a>
+            -------
+            <a href="#" class="tooltip tooltip-large" data-tooltip="Hi! I'm a tooltip! Blah blah blah blah!">Large Tooltip</a>
+            -------
+            <a href="#" class="tooltip tooltip-extreme" data-tooltip="Hi! I'm a tooltip! Blah blah blah blah!">Extreme Tooltip</a>
+          </div>
+<pre>
+  &lt;a href="#" class="tooltip" data-tooltip="Tooltip content goes here"&gt;Normal Tooltip&lt;/a&gt;
+</pre>
+          <div class="page-header" id="collapse">
+            <h1>Collapse</h1>
+          </div>
+          <p>This element allows us to give similar information in a sortable way. Users can select exactly what they want to read without being sent to a new page to read about it.</p>
+          <div class="well well-clear">
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    Standard Collapse
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">
+<pre>
+  &lt;div class="accordion" id="accordion2"&gt;
+  &lt;div class="accordion-group"&gt;
+    &lt;div class="accordion-heading"&gt;
+      &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"&gt;
+        Collapsible Group Item #1
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseOne" class="accordion-body collapse in"&gt;
+      &lt;div class="accordion-inner"&gt;
+        Anim pariatur cliche...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="accordion-group"&gt;
+    &lt;div class="accordion-heading"&gt;
+      &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"&gt;
+        Collapsible Group Item #2
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div id="collapseTwo" class="accordion-body collapse"&gt;
+      &lt;div class="accordion-inner"&gt;
+        Anim pariatur cliche...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-blue">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                    Blue Collapse
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse in">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-blue"&gt;</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-red">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                    Red Collapse
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-red"&gt;</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-green">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                    Green Collapse
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-green"&gt;</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-yellow">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                    Yellow Collapse
+                  </a>
+                </div>
+                <div id="collapseFive" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-yellow"&gt;</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-orange">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
+                    Orange Collapse
+                  </a>
+                </div>
+                <div id="collapseSix" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-orange"&gt;</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-teal">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
+                    Teal Collapse
+                  </a>
+                </div>
+                <div id="collapseSeven" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-teal"&gt;</code>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading accordion-black">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
+                    Black Collapse
+                  </a>
+                </div>
+                <div id="collapseEight" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <p>Add this to the "accordion-heading" element.</p>
+                    <code>&lt;div class="accordion-heading accordion-black"&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-header" id="carousel">
+            <h1>Carousel</h1>
+          </div>
+          <p>A simple slideshow plugin that is responsive to it's container.</p>
+          <div class="well well-clear">
+            <div id="myCarousel" class="carousel slide" data-interval="10000">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item"><img src="http://lorempixel.com/g/1000/500/nature" />
+                </div>
+                <div class="item"><img src="http://lorempixel.com/g/1000/500/technics" />
+                  <!-- Caption Markup -->
+                  <div class="carousel-caption carousel-caption-bottom">
+                    <h4>Caption Area</h4>
+                    <p>Markup for this is fairly simple.</p>
+                  </div>
+                  <!-- End Caption Markup -->
+                </div>
+                <div class="item"><img src="http://lorempixel.com/1000/500/city" />
+                  <!-- Caption Markup -->
+                  <div class="carousel-caption carousel-caption-top">
+                    <h4>Caption Area</h4>
+                    <p>Markup for this is fairly simple.</p>
+                  </div>
+                  <!-- End Caption Markup -->
+                </div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span>&lsaquo;</span></a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next"><span>&rsaquo;</span></a>
+            </div>
+          </div>
+<pre>
+  &lt;div id="myCarousel" class="carousel slide"&gt;
+    &lt;!-- Carousel items --&gt;
+    &lt;div class="carousel-inner"&gt;
+      &lt;div class="active item"&gt;...&lt;/div&gt;
+      &lt;div class="item"&gt;
+        ...
+        &lt;!-- Caption Markup --&gt;
+        &lt;div class="carousel-caption"&gt;
+          &lt;h4&gt;...&lt;/h4&gt;
+          &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- End Caption Markup --&gt;
+      &lt;/div&gt;
+      &lt;div class="item"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Carousel nav --&gt;
+    &lt;a class="carousel-control left" href="#myCarousel" data-slide="prev"&gt;&lt;span&gt;&lsaquo;&lt;/span&gt;&lt;/a&gt;
+    &lt;a class="carousel-control right" href="#myCarousel" data-slide="next"&gt;&lt;span&gt;&rsaquo;&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+</pre>
+          <h3>Caption Markup</h3>
+          <div class="well well-clear">
+            <h4>Caption on the Bottom</h4>
+<pre>
+  &lt;div class="carousel-caption carousel-caption-bottom"&gt;
+</pre>
+            <h4>Caption on the Top</h4>
+<pre>
+  &lt;div class="carousel-caption carousel-caption-top"&gt;
+</pre>
+          </div>
+          <div class="page-header" id="affix">
+            <h1>Affix</h1>
+          </div>
+          <p>The side navigation bar is an example of the Affix plugin. It allows objects to track with the scroll bar. This is useful for keeping navigation accessible no matter where the user has scrolled.</p>
+          <p>These tags need to be added to an element to affix the element:</p>
+<pre>
+  &lt;div data-spy="affix" data-offset-top="200"&gt;...&lt;/div&gt;
+</pre>
+          <p>There are a couple of other settings such as <code>affix-top</code> and <code>affix-bottom</code> that can be used as well.</p>
+          <p>The offset number is the number of pixels that the user must scroll to have the affix kick in. Some manipulation of the CSS might be needed to make the affixed element function correctly.</p>
+
+          <div class="page-header" id="more">
+            <h1>More</h1>
+          </div>
+          <p>Every single element and functionality is not contained in this documentation. I included the ones I felt would be used the most commonly used. This framework in heavily based off of <a href="http://twitter.github.com/bootstrap/index.html">Bootstrap Twitter's</a> open source framework. They have extensive documentation and a <a href="https://github.com/twitter/bootstrap">GitHub</a></p>
+          <p>Here are a few other resources I used to create this:</p>
+          <dl>
+            <dt><a href="http://lesscss.org/">LESS</a></dt>
+            <dd>LESS is a CSS preprocessor. It allows CSS to use variables and saves time writing code.</dd>
+            <dt><a href="https://github.com/stubbornella/oocss/wiki">OOCSS</a></dt>
+            <dd>Object Oriented CSS is a philosophy of writing CSS that simplifies our lives.</dd>
+            <dt><a href="http://www.useit.com/alertbox/mega-dropdown-menus.html">Mega Dropdown Menu</a></dt>
+            <dd>The inclusion of the "block" dropdown menu is due to the findings of Jacob Nielsen, expert on internet usability, that 'Mega' dropdown menus can increase usability.</dd>
+          </dl>
+          </div>
+        </div>
+
+        <hr>
+
+        <footer>
+          <p>&copy; Bluebeam 2012</p>
+        </footer>
+
+      </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.8.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready (function (){
+          //This line is needed to make the Affix Sidebar work.
+          $("#navbar").affix ();
+
+          $('.carousel').carousel({
+            interval: 2000
+          });
+
+          //This line is needed to maek the tabs work.
+          $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+          })
+          
+          
+        )};
+     </script>
+
+  </body>
+  </html>

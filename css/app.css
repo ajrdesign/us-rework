@@ -1,0 +1,22 @@
+.block input {
+	display: block;
+}
+
+.block .btn {
+	margin: 8px 0;
+}
+
+.old-type {
+	font-size: 12px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 1.5em;
+}
+
+.product-display {
+	width: 25%;
+	overflow: hidden;
+}
+
+.container-padding {
+	padding: 10px 10px 0 10px;
+}

@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bluebeam Framework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="/us-rework/css/bootstrap.css" rel="stylesheet">
+  <link href="/us-rework/css/app.css" rel="stylesheet">
+  <link href="/us-rework/css/responsive.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="shortcut icon" href="ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    </head>
+
+    <body>
+
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              MENU
+            </a>
+            <a class="brand" href="/../">Bluebeam</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="index.html">Grids</a></li>
+                <li class="active"><a href="elements.html">CSS Elements</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+<!-- Main hero unit for a primary marketing message or call to action -->
+        <div class="hero-unit hero-unit-gradient">
+          <h1>CSS Elements</h1>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+              <ul data-spy="affix" data-offset-top="235" class="nav nav-tabs nav-stacked docs-sidebar" id="navbar">
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#media">Media Box</a></li>
+                <li><a href="#navigation">Navigation</a></li>
+                <li><a href="#icons">Icons</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+              </ul>
+              <p></p>
+           </div>
+          <div class="span9">
+            <div class="page-header" id="typography">
+              <h1>Typography</h1>
+            </div>
+
+            <!-- Headings -->
+            <h3>Headings</h3>
+            <p>Heading is set in the 'Century Gothic' typeface.</p>
+            <div class="well well-clear">
+              <h1>h1. Heading 1</h1>
+              <h2>h1. Heading 2</h2>
+              <h3>h1. Heading 3</h3>
+              <h4>h1. Heading 4</h4>
+              <h5>h1. Heading 5</h5>
+              <h6>h1. Heading 6</h6>
+            </div>
+
+            <!-- Body Copy -->
+            <h3>Body Copy</h3>
+            <p>Body copy is set in the 'Calibri' typeface.</p>
+            <p><strong>Why change?</strong></p>
+            <p><a href="http://informationarchitects.net/blog/the-web-is-all-about-typography-period/">This</a> is gives some good overarching reasons.</p>
+            <p>The differences are very subtle but powerful. One of the primary differences is <strong>Lucida has a slight "glow" that makes it look almost pixilated.</strong> This is easier to notice in the details such as long stems on letters start to look "fuzzy". This can lead to readbility issues as well as the site looking like something from '98.</p>
+            <p>Secondly, there is a very "tight" feeling to Lucida, which gives a sense of anxiety while reading it.</p>
+            <p>Last is that Calibri has a little more character. You can see how the 'B' in Lucida is very geometric because the top bowl is the same as the bottom bowl where as the 'B' in Calibri has a larger bowl on bottom. This adds a sense of character and likability to the font which makes me not want to shoot myself every time I read it. =)</p>
+            <div class="row">
+              <div class="span4">
+                <h4>Calibri</h4>
+                <div class="well well-clear">
+                  <p>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs. Revu offers high quality PDF creation from CAD and Windows® files, <strong>and an easy to</strong> use PDF markup and editing application. If you are looking for a complete PDF creation, markup, editing and collaboration solution for your PC, then <em>Bluebeam's platform technologies</em> are right for you.</p>
+                </div>
+              </div>
+              <div class="span4">
+                <h4>Lucida Sans Unicode</h4>
+                <div class="well well-clear old-type">
+                  <p>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs. Revu offers high quality PDF creation from CAD and Windows® files, <strong>and an easy to</strong> use PDF markup and editing application. If you are looking for a complete PDF creation, markup, editing and collaboration solution for your PC, then <em>Bluebeam's platform technologies</em> are right for you.</p>
+                </div>
+                <p><small>As set on bluebeam.com</small></p>
+              </div>
+            </div>
+            <p>It is set at 16px with 1.4em leading and <a href="http://informationarchitects.net/blog/100e2r/">this is why</a>. These settings give maxiumum readability over long blocks of copy. For more on line spacing and why these measurements were chosen read this article: <a href="http://www.thinkingwithtype.com/contents/text/#Line_Spacing">Line spacing</a></p>
+
+            <!-- Lead Copy -->
+            <h3>Lead Copy</h3>
+            <p>This is to denote a introduction paragraph or call out a section. This should always be used to introduce any large body copy, here is the reason why: <a href="http://socialtriggers.com/perfect-content-width/">Perfect content width</a>.</p>
+            <p>You can call out the the class with this: <code>&lt;p class="lead"&gt;...&lt;/p&gt;</code></p>
+            <div class="well well-clear">
+              <p class="lead">Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs. Revu offers high quality PDF creation from CAD and Windows® files, and an easy to use PDF markup and editing application. If you are looking for a complete PDF creation, markup, editing and collaboration solution for your PC, then Bluebeam's platform technologies are right for you.</p>
+            </div>
+
+            <!-- Emphasis area -->
+            <h3>Emphasis</h3>
+            <div class="well well-clear">
+              <h4>Bold</h4>
+              <p><strong>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs.</strong></p>
+              <code>&lt;strong&gt;...&lt;/strong&gt;</code>
+            </div>
+            <div class="well well-clear">
+              <h4>Italic</h4>
+              <p><em>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs.</em></p>
+              <code>&lt;em&gt;...&lt;/em&gt;</code>
+            </div>
+            <div class="well well-clear">
+              <h4>Small</h4>
+              <p><small>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs.</small></p>
+              <code>&lt;small&gt;...&lt;/small&gt;</code>
+            </div>
+            <div class="well well-clear">
+              <h4>Color callout</h4>
+              <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+              <code>&lt;p class="muted"&gt;...&lt;/p&gt;</code>
+              <hr>
+              <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+              <code>&lt;p class="text-warning"&gt;...&lt;/p&gt;</code>
+              <hr>
+              <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <code>&lt;p class="text-error"&gt;...&lt;/p&gt;</code>
+              <hr>
+              <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+              <code>&lt;p class="text-info"&gt;...&lt;/p&gt;</code>
+              <hr>
+              <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+              <code>&lt;p class="tex-success"&gt;...&lt;/p&gt;</code>
+            </div>
+
+            <!-- Blockquote -->
+            <h3>Blockquotes</h3>
+            <div class="well well-clear">
+              <blockquote>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs.</blockquote>
+              <code>&lt;blockquote&gt;...&lt;/blockquote&gt;</code>
+            </div>
+            <div class="well well-clear">
+              <blockquote>
+                <p>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs.</p>
+                <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+              </blockquote>
+              <p><code>&lt;blockquote&gt;... &lt;small&gt;...&lt;cite&gt; ... &lt;/cite&gt; &lt;/small&gt;&lt;/blockquote&gt;
+              </code></p>
+            </div>
+            <div class="well well-clear">
+              <blockquote class="pull-right">
+                <p>Bluebeam's platform technologies, Bluebeam Revu Standard, CAD and eXtreme are desktop applications installed on individual user workstations or Tablet PCs.</p>
+                <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+              </blockquote>
+              <p><code>&lt;blockquote&gt;... &lt;small&gt;...&lt;cite&gt; ... &lt;/cite&gt; &lt;/small&gt;&lt;/blockquote&gt;
+              </code></p>
+            </div>
+
+            <!-- Descriptions -->
+            <h3>Descriptions</h3>
+            <div class="well well-clear">
+              <dl>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+              </dl>
+            </div>
+<pre>
+&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+            <h3>Horizontal Descriptions</h3>
+            <div class="well well-clear">
+              <dl class="dl-horizontal">
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+              </dl>
+            </div>
+<pre>
+&lt;dl class="dl-horizontal"&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+            <div class="page-header" id="tables">
+              <h1>Tables</h1>
+            </div>
+            <p>Basic styling for a table.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Andrew</td>
+                  <td>Richardson</td>
+                  <td>@ajrdesign</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jill</td>
+                  <td>Morton</td>
+                  <td>@jmorton</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@thebird</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Striped Table</h3>
+            <p><code>&lt;table class="table table-striped"&gt;</code></p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Bordered Table</h3>
+            <p><code>&lt;table class="table table-bordered"&gt;</code></p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@TwBootstrap</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Hover Table</h3>
+            <p><code>&lt;table class="table table-hover"&gt;</code></p>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Condensed Table</h3>
+            <p><code>&lt;table class="table table-condensed"&gt;</code></p>
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Row Coloring</h3>
+<pre>
+  &lt;tr class="success"&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;TB - Monthly&lt;/td&gt;
+    &lt;td&gt;01/04/2012&lt;/td&gt;
+    &lt;td&gt;Approved&lt;/td&gt;
+  &lt;/tr&gt;
+</pre>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product</th>
+                  <th>Payment Taken</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Approved</td>
+                </tr>
+                <tr class="error">
+                  <td>2</td>
+                  <td>TB - Monthly</td>
+                  <td>02/04/2012</td>
+                  <td>Declined</td>
+                </tr>
+                <tr class="warning">
+                  <td>3</td>
+                  <td>TB - Monthly</td>
+                  <td>03/04/2012</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="info">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="page-header" id="forms">
+              <h1>Forms</h1>
+            </div>
+            <div class="well well-clear">
+              <form>
+                <legend>Inputs</legend>
+                <label>Label name</label>
+                <input type="text" placeholder="Type something…">
+                <span class="help-block">Example block-level help text here.</span>
+                <label class="checkbox">
+                  <input type="checkbox"> Check me out
+                </label>
+                <label>Select</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <label>Select Multiple</label>                 
+                <select multiple="multiple">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <label>Button</label>
+                <button type="submit" class="btn">Submit</button>
+                <legend>Search</legend>
+                <div class="block">
+                <input class="input-mini" type="text" placeholder=".input-mini">
+                <input class="input-small" type="text" placeholder=".input-small">
+                <input class="input-medium" type="text" placeholder=".input-medium">
+                <input class="input-large" type="text" placeholder=".input-large">
+                <input class="input-xlarge" type="text" placeholder=".input-xlarge">
+                <input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+                <input type="text" class="input-medium search-query">
+                <button type="submit" class="btn">Search</button>
+                </div>
+              </form>
+
+              <form class="form-inline">
+                <legend>Inline Form</legend>
+                <input type="text" class="input-small" placeholder="Email">
+                <input type="password" class="input-small" placeholder="Password">
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <button type="submit" class="btn">Sign in</button>
+              </form>
+              <label>Prepend and Append on a text area</label>
+              <div class="input-prepend input-append">
+                <span class="add-on">$</span><input class="span2" id="appendedPrependedInput" size="16" type="text"><span class="add-on">.00</span>
+              </div>
+              </div>
+              <div class="page-header" id="buttons">
+                <h1>Buttons</h1>
+              </div>
+              <p>Buttons are classes are compounding so basically all buttons are exactly the same and you can swap out colors and sizes by adding or subtracting classes. This means there can be a large variety of buttons without a huge amount of repeated code. They are also 100% CSS so there is no requests for images needed.</p>
+              <p>These classes can be applied to any element to act as a "button" for example:</p>
+              <p><code>&lt;a href="#" class="btn"&gt;</code></p>
+              <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-blue">Blue</button></td>
+                <td><code>btn btn-blue</code></td>
+                <td>Provides extra visual weight and identifies the blue action in a set of buttons</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-teal">Teal</button></td>
+                <td><code>btn btn-teal</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-green">Green</button></td>
+                <td><code>btn btn-green</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-orange">Orange</button></td>
+                <td><code>btn btn-orange</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-red">Red</button></td>
+                <td><code>btn btn-red</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Button Sizes</h3>
+          <div class="well well-clear">
+            <p>
+              <button type="button" class="btn btn-extreme btn-blue">Extreme button</button>
+              <button type="button" class="btn btn-extreme">Extreme button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-large btn-blue">Large button</button>
+              <button type="button" class="btn btn-large">Large button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-blue">Default button</button>
+              <button type="button" class="btn">Default button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-small btn-blue">Small button</button>
+              <button type="button" class="btn btn-small">Small button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-mini btn-blue">Mini button</button>
+              <button type="button" class="btn btn-mini">Mini button</button>
+            </p>
+            <button class="btn btn-large btn-block btn-blue" type="button">Block level button</button>
+            <button class="btn btn-large btn-block" type="button">Block level button</button>
+            <p>Extreme Button</p>
+            <code>&lt;button class="btn btn-extreme"&gt;</code>
+            <p>Large Button</p>
+            <code>&lt;button class="btn btn-large"&gt;</code>
+            <p>Default Button</p>
+            <code>&lt;button class="btn"&gt;</code>
+            <p>Small Button</p>
+            <code>&lt;button class="btn btn-small"&gt;</code>
+            <p>Mini Button</p>
+            <code>&lt;button class="btn btn-mini"&gt;</code>
+            <p>Full Width Button</p>
+            <code>&lt;button class="btn btn-block"&gt;</code>
+          </div>
+
+          <h3>Button Groups</h3>
+          <div class="well well-clear">
+            <h4>Horizontal</h4>
+            <div class="btn-group">
+              <button class="btn btn-blue">Left</button>
+              <button class="btn btn-blue">Middle</button>
+              <button class="btn btn-blue">Right</button>
+            </div>
+            <h4>Vertical</h4>
+            <div class="btn-group btn-group-vertical">
+              <button class="btn btn-blue"><i class="icon-align-left"></i></button>
+              <button class="btn btn-blue"><i class="icon-align-center"></i></button>
+              <button class="btn btn-blue"><i class="icon-align-right"></i></button>
+            </div>
+          </div>
+<pre>
+  &lt;div class="btn-group"&gt;
+    &lt;button class="btn btn-blue"&gt;Left&lt;/button&gt;
+    &lt;button class="btn btn-blue"&gt;Middle&lt;/button&gt;
+    &lt;button class="btn btn-blue"&gt;Right&lt;/button&gt;
+  &lt;/div&gt;
+</pre>
+            <p>To make vertical:</p>
+            <code>&lt;div class="btn-group btn-group-vertical"&gt;</code>
+            <h3>Button Dropdowns</h3>
+            <div class="well well-clear">
+              <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                  Action
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">This is a link</a></li>
+                  <li><a href="#">This is a link</a></li>
+                  <li><a href="#">This is a link</a></li>
+                </ul>
+              </div>
+            </div>
+<pre>
+  &lt;div class="btn-group"&gt;
+    &lt;a class="btn dropdown-toggle" data-toggle="dropdown" href="#"&gt;
+      Action
+      &lt;span class="caret"&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      &lt;!-- dropdown menu links --&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+</pre>
+              <div class="page-header" id="media">
+                <h1>Media Box</h1>
+                <p>Enter the <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">media box</a>. This eleminates the need for hundreds of lines of code. "Featurette", "Productette" and "Iconette" can all be combined into this five line beauty. It is adaptive to it's surroundings (Container) and it's contents. It can also be styled with additional classes.</p>
+              </div>
+              <div class="span4">
+                <div class="media">
+                  <a href="#" class="img">
+                    <img src="http://lorempixel.com/75/75/animals" alt="me" />
+                  </a>
+                  <div class="bd">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+<pre>
+  &lt;div class="media"&gt;
+    &lt;a href="..." class="img"&gt;
+      &lt;img src="..." /&gt;
+    &lt;/a&gt;
+    &lt;div class="bd"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre>
+              </div>
+              <div class="span4">
+                <div class="media border">
+                  <a href="#" class="img">
+                    <img src="http://lorempixel.com/75/75/animals" alt="me" />
+                  </a>
+                  <div class="bd">
+                    <h4>Light Border</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+<pre>
+  &lt;div class="media border"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+                <div class="media blue-border-top">
+                  <a href="#" class="img">
+                    <img src="http://lorempixel.com/75/75/animals" alt="me" />
+                  </a>
+                  <div class="bd">
+                    <h4>Strong blue border top</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+<pre>
+  &lt;div class="media blue-border-top"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+                <div class="media blue-border-left">
+                  <a href="#" class="img">
+                    <img src="http://lorempixel.com/75/75/animals" alt="me" />
+                  </a>
+                  <div class="bd">
+                    <h4>Strong blue border left</h4>
+                    <p>This is where the content will go.</p>
+                  </div>
+                </div>
+<pre>
+  &lt;div class="media blue-border-left"&gt;
+    ...
+  &lt;/div&gt;
+</pre>
+              </div>
+              <div class="span9">
+                <h3>Nestable</h3>
+                <p>Media boxes can be nested in eachother.</p>
+                <div class="media gray-background">
+                  <a href="#" class="img">
+                    <img src="http://lorempixel.com/125/125/animals" alt="me" />
+                  </a>
+                  <div class="bd">
+                    <h4>Media Box</h4>
+                    <p>This is where the content will go.</p>
+                    <div class="media gray-background">
+                      <a href="#" class="img">
+                        <img src="http://lorempixel.com/75/75/animals" alt="me" />
+                      </a>
+                      <div class="bd">
+                        <h4>Media Box</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </div>
+                    <div class="media gray-background">
+                      <a href="#" class="img">
+                        <img src="http://lorempixel.com/75/75/animals" alt="me" />
+                      </a>
+                      <div class="bd">
+                        <h4>Media Box</h4>
+                        <p>This is where the content will go.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="page-header" id="navigation">
+                <h1>Navigation</h1>
+              </div>
+              <h3>Basic Navbar</h3>
+              <p>This basic navigation mimics that of the current Bluebeam site but is made entirely of CSS. When viewed on smaller screens it displays a simple 'MENU' button that allows users to show/hide the navigation.</p>
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                      MENU
+                    </a>
+                    <a class="brand" href="/../">Bluebeam</a>
+                    <div class="nav-collapse collapse">
+                      <ul class="nav">
+                        <li class="active"><a href="#">Link #1</a></li>
+                        <li><a href="#">Link #2</a></li>
+                        <li><a href="#">Link #3</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Link #4
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Link #1</a></li>
+                            <li><a href="#">Link #2</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                  </div>
+                </div>
+              </div>
+
+<pre>
+&lt;div class="navbar"&gt;
+  &lt;div class="navbar-inner"&gt;
+    &lt;a class="brand" href="/../"&gt;Title&lt;/a&gt;
+    &lt;ul class="nav"&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+              <h3>Dropdowns</h3>
+              <p>Three sized dropdowns for various usage.</p>
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                      MENU
+                    </a>
+                    <a class="brand" href="/../">Bluebeam</a>
+                    <div class="nav-collapse collapse">
+                      <ul class="nav">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Block Dropdown
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu menu-block">
+                            <a href="#">
+                            <div class="media">
+                              <div class="img">
+                                <img src="http://lorempixel.com/125/125/technics" alt="me" />
+                              </div>
+                              <div class="bd">
+                                <h4>Header</h4>
+                                <p>This is where the content will go.</p>
+                              </div>
+                            </div>
+                            </a>
+                            <a href="#">
+                            <div class="media">
+                              <div class="img">
+                                <img src="http://lorempixel.com/125/125/technics" alt="me" />
+                              </div>
+                              <div class="bd">
+                                <h4>Header</h4>
+                                <p>This is where the content will go.</p>
+                              </div>
+                            </div>
+                          </a>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Small Dropdown
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu pull-right">
+                            <li><a href="#">Link #1</a></li>
+                            <li><a href="#">Link #2</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Large Dropdown
+                            <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu pull-right menu-large">
+                            <li><a href="#">Link #1</a></li>
+                            <li><a href="#">Link #2</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                  </div>
+                </div>
+              </div>
+              <h4>Small Dropdown</h4>
+<pre>
+&lt;ul class="nav"&gt;
+  &lt;li class="dropdown"&gt;
+    &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;
+      Account
+      &lt;b class="caret"&gt;&lt;/b&gt;
+    &lt;/a&gt;
+    &lt;ul class="dropdown-menu"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+              <h4>Large Dropdown</h4>
+<pre>
+&lt;ul class="dropdown-menu menu-large"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+              <h4>Block Dropdown</h4>
+              <p>Works best with media boxes as the hyperlink element.</p>
+<pre>
+&lt;ul class="dropdown-menu menu-block"&gt;
+  ...
+&lt;/ul&gt;
+</pre>
+              <h3>Breadcrumbs</h3>
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a> <span class="divider">/</span></li>
+                <li><a href="#">Library</a> <span class="divider">/</span></li>
+                <li class="active">Data</li>
+              </ul>
+<pre>
+&lt;ul class="breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Data&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+              <h3>Pagination</h3>
+              <div class="pagination">
+                <ul>
+                  <li><a href="#">Prev</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+<pre>
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li&gt; ... &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+              <h4>Centered</h4>
+              <div class="pagination pagination-centered">
+                <ul>
+                  <li><a href="#">Prev</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+<pre>
+&lt;div class="pagination pagination-centered"&gt;
+...
+&lt;/div&gt;
+</pre>
+
+              <h4>Right</h4>
+              <div class="pagination pagination-right">
+                <ul>
+                  <li><a href="#">Prev</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">Next</a></li>
+                </ul>
+              </div>
+<pre>
+&lt;div class="pagination pagination-right"&gt;
+...
+&lt;/div&gt;
+</pre>
+
+
+              <div class="page-header" id="icons">
+                <h1>Icons</h1>
+              </div>
+            <div class="row-fluid">
+            <div class="span4">
+              <h3><i class="icon-resize-full"></i> Scalability</h3>
+              <p>These icons are font based so they can be scaled to any size.</p>
+              <ul class="unstyled spacing">
+                <li><div style="font-size:60px; line-height:60px;">
+                  <i class="icon-resize-full"></i>
+                </div></li>
+                <li><div style="font-size:48px; line-height:48px;">
+                  <i class="icon-resize-full"></i>
+                </div></li>
+                <li><div style="font-size:36px; line-height:36px;">
+                  <i class="icon-resize-full"></i>
+                </div></li>
+                <li><div style="font-size:21px; line-height:21px;">
+                  <i class="icon-resize-full"></i>
+                </div></li>
+              </ul>
+            </div>
+            <div class="span4">
+              <h3><i class="icon-chevron-left"></i> <i class="icon-chevron-right"></i> Takes advantage of CSS styles</h3>
+              <p>Any CSS styles can be applied to the icons to change their apperances.</p>
+              <ul class="unstyled spacing">
+                <li>
+                  <i class="icon-bullhorn" id="bullhorn"></i>
+                </li>
+                <li>
+                  <i class="icon-eye-open" id="eye"></i>
+                </li>
+                <li>
+                  <i class="icon-thumbs-up" id="thumb"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="span4">
+              <h3><i class="icon-tasks"></i> Faster Loading</h3>
+              <p>If you were to load all these icons as images on a page you'd have over 70 individual requests for files from the server. With the web font you have one request from the server that is significantly smaller than all the individual images combined.</p>
+            </div>
+            </div>
+            <h3>Web Icons</h3>
+            <div class="row-fluid">
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-adjust"></i> icon-adjust</li>
+                  <li><i class="icon-asterisk"></i> icon-asterisk</li>
+                  <li><i class="icon-ban-circle"></i> icon-ban-circle</li>
+                  <li><i class="icon-bar-chart"></i> icon-bar-chart</li>
+                  <li><i class="icon-barcode"></i> icon-barcode</li>
+                  <li><i class="icon-beaker"></i> icon-beaker</li>
+                  <li><i class="icon-bell"></i> icon-bell</li>
+                  <li><i class="icon-bolt"></i> icon-bolt</li>
+                  <li><i class="icon-book"></i> icon-book</li>
+                  <li><i class="icon-bookmark"></i> icon-bookmark</li>
+                  <li><i class="icon-bookmark-empty"></i> icon-bookmark-empty</li>
+                  <li><i class="icon-briefcase"></i> icon-briefcase</li>
+                  <li><i class="icon-bullhorn"></i> icon-bullhorn</li>
+                  <li><i class="icon-calendar"></i> icon-calendar</li>
+                  <li><i class="icon-camera"></i> icon-camera</li>
+                  <li><i class="icon-camera-retro"></i> icon-camera-retro</li>
+                  <li><i class="icon-certificate"></i> icon-certificate</li>
+                  <li><i class="icon-check"></i> icon-check</li>
+                  <li><i class="icon-check-empty"></i> icon-check-empty</li>
+                  <li><i class="icon-cloud"></i> icon-cloud</li>
+                  <li><i class="icon-cog"></i> icon-cog</li>
+                  <li><i class="icon-cogs"></i> icon-cogs</li>
+                  <li><i class="icon-comment"></i> icon-comment</li>
+                  <li><i class="icon-comment-alt"></i> icon-comment-alt</li>
+                  <li><i class="icon-comments"></i> icon-comments</li>
+                  <li><i class="icon-comments-alt"></i> icon-comments-alt</li>
+                  <li><i class="icon-credit-card"></i> icon-credit-card</li>
+                  <li><i class="icon-dashboard"></i> icon-dashboard</li>
+                  <li><i class="icon-download"></i> icon-download</li>
+                  <li><i class="icon-download-alt"></i> icon-download-alt</li>
+                  <li><i class="icon-edit"></i> icon-edit</li>
+                  <li><i class="icon-envelope"></i> icon-envelope</li>
+                  <li><i class="icon-envelope-alt"></i> icon-envelope-alt</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-exclamation-sign"></i> icon-exclamation-sign</li>
+                  <li><i class="icon-external-link"></i> icon-external-link</li>
+                  <li><i class="icon-eye-close"></i> icon-eye-close</li>
+                  <li><i class="icon-eye-open"></i> icon-eye-open</li>
+                  <li><i class="icon-facetime-video"></i> icon-facetime-video</li>
+                  <li><i class="icon-film"></i> icon-film</li>
+                  <li><i class="icon-filter"></i> icon-filter</li>
+                  <li><i class="icon-fire"></i> icon-fire</li>
+                  <li><i class="icon-flag"></i> icon-flag</li>
+                  <li><i class="icon-folder-close"></i> icon-folder-close</li>
+                  <li><i class="icon-folder-open"></i> icon-folder-open</li>
+                  <li><i class="icon-gift"></i> icon-gift</li>
+                  <li><i class="icon-glass"></i> icon-glass</li>
+                  <li><i class="icon-globe"></i> icon-globe</li>
+                  <li><i class="icon-group"></i> icon-group</li>
+                  <li><i class="icon-hdd"></i> icon-hdd</li>
+                  <li><i class="icon-headphones"></i> icon-headphones</li>
+                  <li><i class="icon-heart"></i> icon-heart</li>
+                  <li><i class="icon-heart-empty"></i> icon-heart-empty</li>
+                  <li><i class="icon-home"></i> icon-home</li>
+                  <li><i class="icon-inbox"></i> icon-inbox</li>
+                  <li><i class="icon-info-sign"></i> icon-info-sign</li>
+                  <li><i class="icon-key"></i> icon-key</li>
+                  <li><i class="icon-leaf"></i> icon-leaf</li>
+                  <li><i class="icon-legal"></i> icon-legal</li>
+                  <li><i class="icon-lemon"></i> icon-lemon</li>
+                  <li><i class="icon-lock"></i> icon-lock</li>
+                  <li><i class="icon-unlock"></i> icon-unlock</li>
+                  <li><i class="icon-magic"></i> icon-magic</li>
+                  <li><i class="icon-magnet"></i> icon-magnet</li>
+                  <li><i class="icon-map-marker"></i> icon-map-marker</li>
+                  <li><i class="icon-minus"></i> icon-minus</li>
+                  <li><i class="icon-minus-sign"></i> icon-minus-sign</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-money"></i> icon-money</li>
+                  <li><i class="icon-move"></i> icon-move</li>
+                  <li><i class="icon-music"></i> icon-music</li>
+                  <li><i class="icon-off"></i> icon-off</li>
+                  <li><i class="icon-ok"></i> icon-ok</li>
+                  <li><i class="icon-ok-circle"></i> icon-ok-circle</li>
+                  <li><i class="icon-ok-sign"></i> icon-ok-sign</li>
+                  <li><i class="icon-pencil"></i> icon-pencil</li>
+                  <li><i class="icon-picture"></i> icon-picture</li>
+                  <li><i class="icon-plane"></i> icon-plane</li>
+                  <li><i class="icon-plus"></i> icon-plus</li>
+                  <li><i class="icon-plus-sign"></i> icon-plus-sign</li>
+                  <li><i class="icon-print"></i> icon-print</li>
+                  <li><i class="icon-pushpin"></i> icon-pushpin</li>
+                  <li><i class="icon-qrcode"></i> icon-qrcode</li>
+                  <li><i class="icon-question-sign"></i> icon-question-sign</li>
+                  <li><i class="icon-random"></i> icon-random</li>
+                  <li><i class="icon-refresh"></i> icon-refresh</li>
+                  <li><i class="icon-remove"></i> icon-remove</li>
+                  <li><i class="icon-remove-circle"></i> icon-remove-circle</li>
+                  <li><i class="icon-remove-sign"></i> icon-remove-sign</li>
+                  <li><i class="icon-reorder"></i> icon-reorder</li>
+                  <li><i class="icon-resize-horizontal"></i> icon-resize-horizontal</li>
+                  <li><i class="icon-resize-vertical"></i> icon-resize-vertical</li>
+                  <li><i class="icon-retweet"></i> icon-retweet</li>
+                  <li><i class="icon-road"></i> icon-road</li>
+                  <li><i class="icon-rss"></i> icon-rss</li>
+                  <li><i class="icon-screenshot"></i> icon-screenshot</li>
+                  <li><i class="icon-search"></i> icon-search</li>
+                  <li><i class="icon-share"></i> icon-share</li>
+                  <li><i class="icon-share-alt"></i> icon-share-alt</li>
+                  <li><i class="icon-shopping-cart"></i> icon-shopping-cart</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-signal"></i> icon-signal</li>
+                  <li><i class="icon-signin"></i> icon-signin</li>
+                  <li><i class="icon-signout"></i> icon-signout</li>
+                  <li><i class="icon-sitemap"></i> icon-sitemap</li>
+                  <li><i class="icon-sort"></i> icon-sort</li>
+                  <li><i class="icon-sort-down"></i> icon-sort-down</li>
+                  <li><i class="icon-sort-up"></i> icon-sort-up</li>
+                  <li><i class="icon-star"></i> icon-star</li>
+                  <li><i class="icon-star-empty"></i> icon-star-empty</li>
+                  <li><i class="icon-star-half"></i> icon-star-half</li>
+                  <li><i class="icon-tag"></i> icon-tag</li>
+                  <li><i class="icon-tags"></i> icon-tags</li>
+                  <li><i class="icon-tasks"></i> icon-tasks</li>
+                  <li><i class="icon-thumbs-down"></i> icon-thumbs-down</li>
+                  <li><i class="icon-thumbs-up"></i> icon-thumbs-up</li>
+                  <li><i class="icon-time"></i> icon-time</li>
+                  <li><i class="icon-tint"></i> icon-tint</li>
+                  <li><i class="icon-trash"></i> icon-trash</li>
+                  <li><i class="icon-trophy"></i> icon-trophy</li>
+                  <li><i class="icon-truck"></i> icon-truck</li>
+                  <li><i class="icon-umbrella"></i> icon-umbrella</li>
+                  <li><i class="icon-upload"></i> icon-upload</li>
+                  <li><i class="icon-upload-alt"></i> icon-upload-alt</li>
+                  <li><i class="icon-user"></i> icon-user</li>
+                  <li><i class="icon-user-md"></i> icon-user-md</li>
+                  <li><i class="icon-volume-off"></i> icon-volume-off</li>
+                  <li><i class="icon-volume-down"></i> icon-volume-down</li>
+                  <li><i class="icon-volume-up"></i> icon-volume-up</li>
+                  <li><i class="icon-warning-sign"></i> icon-warning-sign</li>
+                  <li><i class="icon-wrench"></i> icon-wrench</li>
+                  <li><i class="icon-zoom-in"></i> icon-zoom-in</li>
+                  <li><i class="icon-zoom-out"></i> icon-zoom-out</li>
+                </ul>
+              </div>
+            </div>
+            <h3>Text Edit Icons</h3>
+            <div class="row-fluid">
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-file"></i> icon-file</li>
+                  <li><i class="icon-cut"></i> icon-cut</li>
+                  <li><i class="icon-copy"></i> icon-copy</li>
+                  <li><i class="icon-paste"></i> icon-paste</li>
+                  <li><i class="icon-save"></i> icon-save</li>
+                  <li><i class="icon-undo"></i> icon-undo</li>
+                  <li><i class="icon-repeat"></i> icon-repeat</li>
+                  <li><i class="icon-paper-clip"></i> icon-paper-clip</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-text-height"></i> icon-text-height</li>
+                  <li><i class="icon-text-width"></i> icon-text-width</li>
+                  <li><i class="icon-align-left"></i> icon-align-left</li>
+                  <li><i class="icon-align-center"></i> icon-align-center</li>
+                  <li><i class="icon-align-right"></i> icon-align-right</li>
+                  <li><i class="icon-align-justify"></i> icon-align-justify</li>
+                  <li><i class="icon-indent-left"></i> icon-indent-left</li>
+                  <li><i class="icon-indent-right"></i> icon-indent-right</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-font"></i> icon-font</li>
+                  <li><i class="icon-bold"></i> icon-bold</li>
+                  <li><i class="icon-italic"></i> icon-italic</li>
+                  <li><i class="icon-strikethrough"></i> icon-strikethrough</li>
+                  <li><i class="icon-underline"></i> icon-underline</li>
+                  <li><i class="icon-link"></i> icon-link</li>
+                  <li><i class="icon-columns"></i> icon-columns</li>
+                  <li><i class="icon-table"></i> icon-table</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-th-large"></i> icon-th-large</li>
+                  <li><i class="icon-th"></i> icon-th</li>
+                  <li><i class="icon-th-list"></i> icon-th-list</li>
+                  <li><i class="icon-list"></i> icon-list</li>
+                  <li><i class="icon-list-ol"></i> icon-list-ol</li>
+                  <li><i class="icon-list-ul"></i> icon-list-ul</li>
+                  <li><i class="icon-list-alt"></i> icon-list-alt</li>
+                </ul>
+              </div>
+            </div>
+            <h3>Directional Icons</h3>
+            <div class="row-fluid">
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-arrow-down"></i> icon-arrow-down</li>
+                  <li><i class="icon-arrow-left"></i> icon-arrow-left</li>
+                  <li><i class="icon-arrow-right"></i> icon-arrow-right</li>
+                  <li><i class="icon-arrow-up"></i> icon-arrow-up</li>
+                  <li><i class="icon-chevron-down"></i> icon-chevron-down</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-circle-arrow-down"></i> icon-circle-arrow-down</li>
+                  <li><i class="icon-circle-arrow-left"></i> icon-circle-arrow-left</li>
+                  <li><i class="icon-circle-arrow-right"></i> icon-circle-arrow-right</li>
+                  <li><i class="icon-circle-arrow-up"></i> icon-circle-arrow-up</li>
+                  <li><i class="icon-chevron-left"></i> icon-chevron-left</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-caret-down"></i> icon-caret-down</li>
+                  <li><i class="icon-caret-left"></i> icon-caret-left</li>
+                  <li><i class="icon-caret-right"></i> icon-caret-right</li>
+                  <li><i class="icon-caret-up"></i> icon-caret-up</li>
+                  <li><i class="icon-chevron-right"></i> icon-chevron-right</li>
+                </ul>
+              </div>
+              <div class="span3">
+                <ul class="unstyled spacing">
+                  <li><i class="icon-hand-down"></i> icon-hand-down</li>
+                  <li><i class="icon-hand-left"></i> icon-hand-left</li>
+                  <li><i class="icon-hand-right"></i> icon-hand-right</li>
+                  <li><i class="icon-hand-up"></i> icon-hand-up</li>
+                  <li><i class="icon-chevron-up"></i> icon-chevron-up</li>
+                </ul>
+              </div>
+            </div>
+            <h3>Video Controls Icons</h3>
+              <div class="row-fluid">
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-play-circle"></i> icon-play-circle</li>
+                    <li><i class="icon-play"></i> icon-play</li>
+                    <li><i class="icon-pause"></i> icon-pause</li>
+                    <li><i class="icon-stop"></i> icon-stop</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-step-backward"></i> icon-step-backward</li>
+                    <li><i class="icon-fast-backward"></i> icon-fast-backward</li>
+                    <li><i class="icon-backward"></i> icon-backward</li>
+                    <li><i class="icon-forward"></i> icon-forward</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-fast-forward"></i> icon-fast-forward</li>
+                    <li><i class="icon-step-forward"></i> icon-step-forward</li>
+                    <li><i class="icon-eject"></i> icon-eject</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-fullscreen"></i> icon-fullscreen</li>
+                    <li><i class="icon-resize-full"></i> icon-resize-full</li>
+                    <li><i class="icon-resize-small"></i> icon-resize-small</li>
+                  </ul>
+                </div>
+              </div>
+            <h3>Social Icons</h3>
+              <div class="row-fluid">
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-phone"></i> icon-phone</li>
+                    <li><i class="icon-phone-sign"></i> icon-phone-sign</li>
+                    <li><i class="icon-facebook"></i> icon-facebook</li>
+                    <li><i class="icon-facebook-sign"></i> icon-facebook-sign</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-twitter"></i> icon-twitter</li>
+                    <li><i class="icon-twitter-sign"></i> icon-twitter-sign</li>
+                    <li><i class="icon-github"></i> icon-github</li>
+                    <li><i class="icon-github-sign"></i> icon-github-sign</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-linkedin"></i> icon-linkedin</li>
+                    <li><i class="icon-linkedin-sign"></i> icon-linkedin-sign</li>
+                    <li><i class="icon-pinterest"></i> icon-pinterest</li>
+                    <li><i class="icon-pinterest-sign"></i> icon-pinterest-sign</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <ul class="unstyled spacing">
+                    <li><i class="icon-google-plus"></i> icon-google-plus</li>
+                    <li><i class="icon-google-plus-sign"></i> icon-google-plus-sign</li>
+                    <li><i class="icon-sign-blank"></i> icon-sign-blank</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="pull-right">Icons from <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>.</p>
+              <div class="page-header" id="gallery">
+                <h1>Gallery</h1>
+              </div>
+              <p>Simple gallery that can be as long or short as needed.</p>
+                <ul class="gallery">
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                  <li><img src="http://lorempixel.com/g/200/300/abstract" alt="Product Name" /></li>
+                </ul>
+<pre>
+&lt;ul class="gallery"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <footer>
+          <p>&copy; Bluebeam 2012</p>
+        </footer>
+
+      </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/us-rework/js/jquery-1.8.2.min.js"></script>
+    <script src="/us-rework/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready (function (){
+            $("#navbar").affix ();
+        )};
+     </script>
+
+  </body>
+  </html>
